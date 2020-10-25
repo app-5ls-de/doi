@@ -36,7 +36,9 @@ function updateLinks() {
         window.history.replaceState({}, document.title, "/" + doi);
     } else {
         document.body.classList.add("invalid")
-        
+        a_doi.href = "javascript:void(0)"
+        a_lmu.href = "javascript:void(0)"
+        a_sci.href = "javascript:void(0)"
         window.history.replaceState({}, document.title, "/");
     }
 }
@@ -47,5 +49,5 @@ input.addEventListener("input", updateLinks, false)
 var URLParameter = location.pathname.substring(1)
 if (URLParameter) {
     input.innerText = URLParameter
-    updateLinks()
 }
+updateLinks()
