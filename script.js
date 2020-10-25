@@ -36,7 +36,8 @@ function updateLinks() {
         window.history.replaceState({}, document.title, "/" + doi);
     } else {
         document.body.classList.add("invalid")
-
+        
+        window.history.replaceState({}, document.title, "/");
     }
 }
 
