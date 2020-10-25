@@ -33,6 +33,7 @@ function updateLinks() {
         a_lmu.href = "https://doi-org.emedien.ub.uni-muenchen.de/" + doi
         a_sci.href = "https://"+"sci"+"-"+"hub"+"."+"se"+"/" + doi
 
+        window.history.replaceState({}, document.title, "/" + doi);
     } else {
         document.body.classList.add("invalid")
 
@@ -40,3 +41,10 @@ function updateLinks() {
 }
 
 input.addEventListener("input", updateLinks, false)
+
+
+var URLParameter = location.pathname.substring(1)
+if (URLParameter) {
+    input.innerText = URLParameter
+    updateLinks()
+}
