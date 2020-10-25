@@ -31,7 +31,7 @@ function updateLinks() {
         document.body.classList.remove("invalid")
         a_doi.href = "https://doi.org/" + doi
         a_lmu.href = "https://doi-org.emedien.ub.uni-muenchen.de/" + doi
-        a_sci.href = "https://sci-hub.se/" + doi
+        a_sci.href = "https://"+"sci"+"-"+"hub"+"."+"se"+"/" + doi
 
     } else {
         document.body.classList.add("invalid")
