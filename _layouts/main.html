@@ -89,7 +89,7 @@
         function getDoi(string) {
             if (!string || !typeof string == "string") return false
 
-            string = string.trim()
+            string = string.trim().toLowerCase()
                 .replace('doi:', '')
                 .replace(/^http(s)?\:\/\//, '')
                 .replace('dx.doi.org', '')
