@@ -92,9 +92,14 @@
             string = string.trim()
                 .replace('doi:', '')
                 .replace(/^http(s)?\:\/\//, '')
-                .replace('dx.doi.org/', '')
-                .replace('doi.org/', '')
-                .replace('doi-org.emedien.ub.uni-muenchen.de/', '')
+                .replace('dx.doi.org', '')
+                .replace('doi.org', '')
+                .replace('doi-org', '')
+                .replace('.emedien.ub.uni-muenchen.de', '')
+                .replace(/^\//, '')
+
+            // http://dx.doi.org.emedien.ub.uni-muenchen.de/
+            // http://dx.doi.org
 
             if (doiRegex.test(string)) return string
             return false
