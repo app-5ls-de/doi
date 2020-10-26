@@ -8,8 +8,6 @@ const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/404.html',
-  '/script.js',
-  '/style.css',
   '/manifest.json',
   '/favicon.ico',
   '/icons/android-chrome-192x192.png',
