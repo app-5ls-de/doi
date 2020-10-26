@@ -90,7 +90,7 @@
             if (!string || !typeof string == "string") return false
 
             string = string.trim().toLowerCase()
-                .replace('doi:', '')
+                .replace('doi:', '').trim()
                 .replace(/^http(s)?\:\/\//, '')
                 .replace('dx.doi.org', '')
                 .replace('doi.org', '')
