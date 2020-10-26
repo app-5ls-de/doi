@@ -111,7 +111,7 @@
 
         function updateLinks() {
             let doi = getDoi(input.innerText)
-            console.log(doi)
+
             if (doi) {
                 document.body.classList.remove("invalid")
                 a_doi.href = "https://doi.org/" + doi
