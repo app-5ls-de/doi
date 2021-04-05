@@ -67,6 +67,12 @@
             pointer-events: none;
         }
 
+
+        .invalid div#input {
+            border: 1px solid red;
+            outline: red auto 1px;
+        }
+
     </style>
 
 </head>
@@ -121,7 +127,7 @@
                 document.body.classList.remove("invalid")
                 a_doi.href = "https://doi.org/" + doi
                 a_lmu.href = "https://doi-org.emedien.ub.uni-muenchen.de/" + doi
-                a_sci.href = "https://" + "sci" + "-" + "hub" + "." + "se" + "/" + doi
+                a_sci.href = "https://" + "sci" + "-" /* hello */+ "hub" + "." + "se" + "/" + doi
 
                 window.history.replaceState({}, document.title, "/" + doi);
             } else {
