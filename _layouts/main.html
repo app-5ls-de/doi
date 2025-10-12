@@ -83,7 +83,7 @@
         <div id="input" contenteditable><br></div>
         <div class="links">
             <a id="doi" href="#" target="_blank">doi</a>
-            <a id="lmu" href="#" target="_blank">lmu</a>
+            <a id="lmu" href="#" target="_blank" style="display: none">lmu</a>
             <a id="sci" href="#" target="_blank">sci</a>
         </div>
     </div>
@@ -127,7 +127,7 @@
                 document.body.classList.remove("invalid")
                 a_doi.href = "https://doi.org/" + doi
                 a_lmu.href = "https://doi-org.emedien.ub.uni-muenchen.de/" + doi
-                a_sci.href = "https://" + "ann" + "as-a" /* hello */+ "rchi" + "ve.o" + "rg" + "/" + doi
+                a_sci.href = "https://" + "ann" + "as-a" /* hello */+ "rchi" + "ve.o" + "rg" + "/sc" + "idb/" + doi
 
                 window.history.replaceState({}, document.title, "/" + doi);
             } else {
